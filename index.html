@@ -55,7 +55,17 @@
         <div class="column is-12-tablet is-4-desktop">
           <div class="is-size-4 mb-4">£10.95</div>
           <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perferendis ipsa totam.</p>
-          <button class="button is-primary">Add to Cart</button>
+          <form>
+            <div class="control mb-6">
+              <div class="select is-dark">
+                <select>
+                  <option>Small (250g)</option>
+                  <option>Large (500g)</option>
+                </select>
+              </div>
+            </div>
+            <button class="button is-primary">Add to Cart</button>
+          </form>
         </div>
       </div>
     </div>
@@ -167,7 +177,34 @@
     <div class="modal-background"></div>
     <div class="modal-content has-background-white py-5 px-5">
       <h3 class="title mb-6">Join the Club</h3>
-      
+      <form>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Name">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="Email">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+        <div class="mt-6 has-text-centered">
+          <button class="button is-warning">Sign Up</button>
+        </div>
+      </form>
     </div>
   </div>
 
